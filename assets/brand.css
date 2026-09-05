@@ -23,7 +23,8 @@
 
 /* Each slide owns its furniture, so branding also appears on printed pages. */
 .slide-header{position:absolute;inset:0 0 auto;height:120px}
-.reveal img.brand-logo{position:absolute;top:36px;right:64px;width:184px;height:auto;max-width:none;max-height:none;margin:0;border:0;box-shadow:none}
+.reveal img.brand-logo{position:absolute;top:27px;right:64px;width:184px;height:auto;max-width:none;max-height:none;margin:0;border:0;box-shadow:none}
+.dark-slide img.brand-logo{top:36px}
 .slide-label{position:absolute;left:64px;top:55px;max-width:850px;font-size:15px;line-height:1.3;letter-spacing:.09em;font-weight:700;text-transform:uppercase;color:var(--navy)}
 .slide-label::before{content:'';display:inline-block;width:25px;height:3px;background:var(--blue);vertical-align:middle;margin-right:12px}
 .slide-footer{position:absolute;left:64px;right:64px;bottom:27px;min-height:35px;border-top:1px solid #CFD9E7;padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:var(--muted)}
@@ -89,7 +90,7 @@
 .workshop-slide .sub-message{font-size:21px;margin:0 0 12px}
 .workshop-slide .card li{font-size:21px}
 .phase{padding:22px 18px;min-height:250px}
-.phase .emoji{font-size:40px;display:block;margin-bottom:14px}
+.icon-phosphor{display:block;width:42px;height:42px;margin-bottom:14px;color:var(--blue);fill:currentColor}
 .phase h3{font-size:24px}
 .phase p{font-size:21px;color:var(--ink)}
 .quote{font-size:34px;line-height:1.2;margin:24px 0}
@@ -154,9 +155,22 @@
 .time-slide small{display:block;margin-top:16px}
 .patient-slide .visual-grid{align-items:start}
 .patient-slide .mini-card{padding:10px 16px}
-.patient-slide .svg-card{padding:12px}
-.patient-slide .svg-card svg{max-height:330px}
 .patient-slide .callout{margin-top:16px}
+.reveal figure.exam-photo,.reveal figure.pulse-photo{margin:0}
+.reveal img.clinical-photo{display:block;max-width:100%;max-height:none;width:100%;height:auto;margin:0;border:0;box-shadow:none;border-radius:10px}
+.exam-photo{padding:0 12px;background:white;border:1px solid #D8E1ED;border-radius:12px}
+.reveal .exam-photo img{height:310px;object-fit:contain}
+.photo-credit{display:block;font-size:14px;line-height:1.35;color:var(--muted)}
+.exam-photo .photo-credit{padding:9px 0 11px}
+.reveal .photo-credit a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+.anatomy-slide .visual-grid{align-items:start;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.pulse-photos{display:grid;gap:14px}
+.pulse-photo{display:grid;grid-template-columns:280px minmax(0,1fr);gap:16px;align-items:center;padding:12px;background:white;border:1px solid #D8E1ED;border-radius:12px}
+.reveal .pulse-photo img{height:165px;object-fit:contain}
+.pulse-photo figcaption{font-size:18px;line-height:1.4;color:var(--ink)}
+.pulse-photo strong{display:block;font-family:'DM Sans',Arial,sans-serif;font-size:23px;line-height:1.2;color:var(--navy);margin-bottom:8px}
+.pulse-photos>.photo-credit{margin-top:0}
+.anatomy-slide .mini-card{padding:14px 16px}
 .application-slide .mini-card{padding:8px 16px}
 .application-slide .mini-card h3{margin-bottom:4px}
 .application-slide .caption-note{margin-top:16px;max-width:1080px}

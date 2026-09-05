@@ -19,10 +19,10 @@ deckSlides.forEach((slide, index) => {
   category.textContent = label;
   const logo = document.createElement('img');
   logo.className = 'brand-logo';
-  logo.src = `assets/brand/inocare-${isDark ? 'white' : 'dark'}.png`;
+  logo.src = isDark ? 'assets/brand/inocare-white.png' : 'assets/brand/inocare-colour.jpg';
   logo.alt = 'Klinik Inocare — Wound Care & Wellness Centre';
   logo.width = 184;
-  logo.height = 47;
+  logo.height = isDark ? 47 : 60;
   header.append(category, logo);
   const footer = document.createElement('footer');
   footer.className = 'slide-footer';
