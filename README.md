@@ -64,13 +64,25 @@ http://localhost:8000/
 
 ## Reveal.js presenter controls
 
+- **Menu button (bottom left)** or `M` — open tools, a searchable list of all 57 slides, and a shortcut guide.
+- `T` — open/close the chalkboard.
+- `C` — draw directly on the current slide.
+- `E` — eraser; choose a colour or use `X` / `Y` to return to the pen.
+- `Delete` — clear the current drawing; `Backspace` — clear all drawings after confirmation.
+- `D` — download drawing data as `chalkboard.json`.
 - `→` / `←` — navigate slides
 - `S` — speaker notes view
-- `Esc` — slide overview
+- `Esc` — close the menu or finish drawing; otherwise open/close slide overview
 - `F` — fullscreen
 - `B` — black screen
+- `G` — jump to a slide number; `Home` / `End` — first/last slide.
+- `?` / `F1` — Reveal.js keyboard help.
 
-To print/export, append `?print-pdf` to the presentation URL and print from the browser.
+Drawing supports mouse, stylus and touch. The toolbar provides five colours, an eraser, clear and Done buttons. Drawings persist across slide changes and refreshes within the same browser tab, using session storage. Download a copy before closing the tab. The downloaded JSON can be supplied as the Chalkboard plugin's `src` for a future session.
+
+Choose **Menu → Print / Save PDF** to open print view in the same tab, then use its Print / Save PDF button. The menu and drawing toolbar are excluded from printed output. The Chalkboard plugin adds recorded chalkboard pages after their corresponding slide; annotations drawn directly on slides are not included in that export. The print-view Back to slides button returns to the presentation.
+
+The menu and toolbar are local assets in `assets/presenter.js` and `assets/presenter.css`; the MIT-licensed Chalkboard plugin is pinned and bundled in `assets/vendor/chalkboard/`. Phosphor icons are bundled in `assets/icons/presenter.svg`. No build step is required.
 
 ## Adding the real case-study photographs later
 

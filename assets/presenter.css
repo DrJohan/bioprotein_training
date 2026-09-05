@@ -1,0 +1,61 @@
+/* Presenter UI stays outside the scaled slide canvas. */
+.presenter-ui{font:400 16px/1.45 Inter,Arial,sans-serif;color:#1E293B}
+.presenter-ui *{box-sizing:border-box}
+.presenter-ui [hidden]{display:none!important}
+.presenter-ui button,.presenter-ui input{font:inherit}
+.presenter-ui button{cursor:pointer;color:inherit}
+.presenter-ui button:disabled{cursor:default;opacity:.45}
+.presenter-ui button:focus-visible,.presenter-ui input:focus-visible{outline:3px solid #538AC3;outline-offset:3px}
+.presenter-ui svg{display:block;width:24px;height:24px;flex:none;fill:currentColor;stroke:none}
+.presenter-menu-toggle{position:fixed;left:max(12px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));z-index:40;width:44px;min-height:44px;padding:9px;display:flex;align-items:center;justify-content:center;border:1px solid #CFD9E7;border-radius:10px;background:#fff;color:#234173!important;box-shadow:0 3px 14px #23417318}
+.presenter-menu-toggle>span{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;white-space:nowrap}
+.presenter-menu-toggle:hover{background:#EDF3FA}
+.presenter-menu{position:fixed;inset:0 auto 0 0;margin:0;padding:0;border:0;border-right:1px solid #CFD9E7;width:min(460px,100%);max-width:100%;height:100vh;height:100dvh;max-height:100dvh;background:#F7F9FC;box-shadow:8px 0 36px #14274530;color:#1E293B;overflow:hidden}
+.presenter-menu[open]{display:flex;flex-direction:column}
+.presenter-menu::backdrop{background:rgba(14,29,49,.42)}
+.presenter-menu-header{padding:22px 22px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:white}
+.presenter-menu h2{font:700 24px/1.2 'DM Sans',Arial,sans-serif;color:#234173;margin:0 0 5px}
+.presenter-menu p{margin:0;font-size:14px;color:#64748B}
+.presenter-icon-button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:10px;border:1px solid #CFD9E7;border-radius:8px;background:white}
+.presenter-tabs{display:flex;gap:4px;padding:0 18px;background:white;border-bottom:1px solid #CFD9E7}
+.presenter-tabs button{flex:1;min-width:0;min-height:48px;padding:10px 4px;background:none;border:0;border-bottom:3px solid transparent;font-weight:600;color:#64748B}
+.presenter-tabs [aria-selected=true]{color:#234173;border-bottom-color:#538AC3}
+.presenter-panel{padding:20px 22px 32px;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+.presenter-panel h3{font:700 15px/1.4 Inter,Arial,sans-serif;color:#234173;margin:0 0 10px}
+.presenter-panel h3:not(:first-child){margin-top:24px}
+.presenter-tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.presenter-tool{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:13px 12px;border:1px solid #D8E1ED;border-radius:10px;background:white;text-align:left;font-size:14px!important;line-height:1.3;min-width:0}
+.presenter-tool:hover{background:#EDF3FA;border-color:#538AC3}
+.presenter-tool svg{color:#538AC3}
+.presenter-tool[aria-pressed=true]{background:#EDF3FA;border-color:#234173}
+.presenter-tool span{font-weight:600}
+.presenter-ui kbd{font:500 12px/1.5 Inter,Arial,sans-serif;padding:2px 6px;border:1px solid #CFD9E7;border-radius:4px;color:#64748B;background:#F7F9FC;white-space:normal}
+.presenter-panel .presenter-hint{margin:14px 0 0;font-size:13px;line-height:1.5}
+.presenter-search-label{display:block;font-weight:600;font-size:14px;margin-bottom:8px;color:#234173}
+.presenter-search{width:100%;min-height:46px;padding:10px 12px;border:1px solid #B9C9DD;border-radius:8px;background:white;color:#1E293B;margin-bottom:14px}
+.presenter-slide-list{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.presenter-slide-link{display:flex;align-items:baseline;gap:12px;width:100%;min-height:48px;padding:11px 12px;border:1px solid transparent;border-radius:8px;text-align:left;background:white;font-size:14px!important;line-height:1.45}
+.presenter-slide-link:hover,.presenter-slide-link[aria-current=true]{background:#EDF3FA;border-color:#B9C9DD;color:#234173}
+.presenter-slide-link[aria-current=true]{font-weight:600}
+.presenter-slide-link span:first-child{min-width:25px;color:#64748B;font-size:12px;font-variant-numeric:tabular-nums}
+.presenter-shortcuts{margin:0;display:grid}
+.presenter-shortcuts>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(85px,.7fr);gap:14px;padding:11px 0;border-bottom:1px solid #D8E1ED;font-size:14px}
+.presenter-shortcuts dt,.presenter-shortcuts dd{margin:0}
+.presenter-shortcuts dd{text-align:right}
+.presenter-drawing-bar{position:fixed;z-index:40;top:max(10px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 24px);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;padding:8px;background:white;border:1px solid #CFD9E7;border-radius:12px;box-shadow:0 4px 20px #14274530}
+.presenter-drawing-bar .drawing-mode{font-size:13px;font-weight:600;color:#234173;padding:0 8px}
+.presenter-colours{display:flex;gap:2px;align-items:center}
+.presenter-colour{width:44px;height:44px;border:2px solid transparent;border-radius:8px;background:white;padding:8px}
+.presenter-colour::before{content:'';display:block;width:24px;height:24px;background:var(--swatch);border-radius:50%;border:1px solid #B9C9DD}
+.presenter-colour[aria-pressed=true],.presenter-drawing-bar [aria-pressed=true]{border-color:#234173;background:#EDF3FA}
+.presenter-done{min-height:44px;border:0;border-radius:8px;padding:10px 14px;background:#234173;color:white!important;font-weight:600!important}
+.presenter-notice{position:fixed;z-index:41;left:50%;bottom:80px;transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);background:#234173;color:white;padding:10px 16px;border-radius:8px;font-size:14px}
+.presenter-print-bar{position:fixed;z-index:40;top:12px;right:12px;display:flex;gap:8px;padding:10px;background:white;border:1px solid #CFD9E7;border-radius:10px}
+.presenter-print-bar button{min-height:44px;padding:8px 16px;border:1px solid #CFD9E7;border-radius:8px;background:white}
+.presenter-print-bar button:last-child{background:#234173;color:white}
+#chalkboard,#notescanvas{touch-action:none}
+.presenter-drawing-active .reveal>.controls{visibility:hidden}
+@media (max-width:440px){.presenter-menu-header{padding:18px 16px 14px}.presenter-panel{padding:16px 16px 24px}.presenter-drawing-bar .drawing-mode{flex-basis:100%;text-align:center}.presenter-print-bar{left:12px;right:12px;justify-content:center}}
+@media (max-height:460px){.presenter-menu-header{padding-top:12px;padding-bottom:10px}.presenter-panel{padding-top:14px}.presenter-drawing-bar .drawing-mode{display:none}}
+@media (forced-colors:active){.presenter-colour::before{forced-color-adjust:none}.presenter-tool[aria-pressed=true],.presenter-tabs [aria-selected=true]{border:2px solid Highlight}}
+@media print{.presenter-ui{display:none!important}}

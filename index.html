@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bioprotein in Advanced Wound Management | Klinik Inocare</title>
   <meta name="description" content="Doctor training workshop on advanced wound management, patient selection, wound-bed preparation and adjunctive bioprotein use.">
   <meta name="theme-color" content="#234173">
@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
   <link rel="stylesheet" href="assets/brand.css">
+  <link rel="stylesheet" href="assets/vendor/chalkboard/style.css">
+  <link rel="stylesheet" href="assets/presenter.css">
 </head>
 <body>
 <div class="reveal">
@@ -869,7 +871,7 @@
   <div class="section-number">Appendix</div>
   <h2>GitHub Pages presenter tips</h2>
   <div class="two-col">
-    <div class="card blue"><h3>Keyboard</h3><p><span class="kbd">F</span> fullscreen &nbsp; <span class="kbd">S</span> speaker notes &nbsp; <span class="kbd">Esc</span> overview &nbsp; <span class="kbd">B</span> black screen</p></div>
+    <div class="card blue"><h3>Keyboard</h3><p><span class="kbd">F</span> fullscreen &nbsp; <span class="kbd">S</span> speaker notes &nbsp; <span class="kbd">Esc</span> overview &nbsp; <span class="kbd">B</span> black screen</p><p><span class="kbd">M</span> menu &nbsp; <span class="kbd">T</span> chalkboard &nbsp; <span class="kbd">C</span> draw on slide</p><p class="mini">Use the bottom-left Menu button for tools, slide search and all shortcuts.</p></div>
     <div class="card green"><h3>Print to PDF</h3><p>Add <span class="kbd">?print-pdf</span> to the URL, then use the browser print dialog.</p></div>
   </div>
   <aside class="notes">This slide can be deleted before live presentation if not needed.</aside>
@@ -905,6 +907,8 @@
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
 <script src="assets/brand.js"></script>
+<script src="assets/vendor/chalkboard/plugin.js"></script>
+<script src="assets/presenter.js"></script>
 <script>
   Reveal.initialize({
     hash: true,
@@ -917,7 +921,8 @@
     height: 720,
     margin: 0.02,
     controlsTutorial: true,
-    plugins: [ RevealNotes ]
+    chalkboard: InocareDrawingOptions,
+    plugins: [ RevealNotes, RevealChalkboard, InocarePresenter ]
   });
 </script>
 </body>
