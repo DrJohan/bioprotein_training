@@ -8,13 +8,13 @@ Reveal.js doctor-training presentation prepared for deployment on **GitHub Pages
 .
 ├── index.html
 ├── .nojekyll
-├── .github/
-│   └── workflows/
-│       └── deploy-pages.yml
 ├── assets/
-│   └── cases/
-│       ├── README.md
-│       └── .gitkeep
+│   ├── brand.css
+│   ├── brand.js
+│   ├── brand/
+│   ├── fonts/
+│   └── cases/README.md
+├── robots.txt
 └── README.md
 ```
 
@@ -26,9 +26,9 @@ Reveal.js 5.1.0 is pinned via jsDelivr CDN in `index.html`.
 1. Create a new GitHub repository, or use an existing empty repository.
 2. Upload/commit all files in this package to the **root of the `main` branch**.
 3. On GitHub, open **Settings → Pages**.
-4. Under **Build and deployment → Source**, select **GitHub Actions**.
-5. Open **Actions** and run **Deploy Reveal.js deck to GitHub Pages**, or push another commit to `main`.
-6. When the workflow completes, the deployment URL will appear in the workflow summary and under **Settings → Pages**.
+4. Under **Build and deployment → Source**, select **Deploy from a branch**.
+5. Choose **main** and **/ (root)**, then save. Updates pushed to `main` deploy automatically.
+6. When deployment completes, the URL will appear under **Settings → Pages**.
 
 For a normal project repository, the URL will generally be:
 
@@ -37,6 +37,14 @@ https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
 ```
 
 All local assets use relative paths, so the deck is compatible with project-site subpaths.
+
+## Klinik Inocare branding
+
+Every slide uses the approved logo at the top right, the clinic address in the footer, and a page count. The shared layout is in `assets/brand.css`; the repeated slide frame and address are in `assets/brand.js`. The dark closing slide uses the approved white logo variant.
+
+DM Sans and Inter are bundled locally, with their licences in `assets/fonts/`. The logo files were copied unchanged from the approved Klinik Inocare brand kit. Address source: [Klinik Inocare contact page](https://klinikinocare.com/contact-us/).
+
+The layout has fixed header and footer areas. Presenter notes remain in the original `aside.notes` elements, and branding repeats in Reveal.js PDF printing. Local PDF backups belong in `output/pdf/`, which is excluded from Git.
 
 ## Local preview
 
