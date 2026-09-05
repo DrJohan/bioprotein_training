@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bioprotein in Advanced Wound Management | Klinik Inocare</title>
+  <meta name="description" content="Doctor training workshop on advanced wound management, patient selection, wound-bed preparation and adjunctive bioprotein use.">
+  <meta name="theme-color" content="#0B2A4A">
+  <meta name="robots" content="noindex,nofollow">
+  <meta property="og:title" content="Bioprotein in Advanced Wound Management | Klinik Inocare">
+  <meta property="og:description" content="Doctor training workshop: from patient selection to clinical application, documentation and follow-up.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
+  <style>
+    :root{
+      --navy:#0B2A4A;
+      --blue:#0868B7;
+      --sky:#EAF5FF;
+      --teal:#0FA3B1;
+      --green:#16A085;
+      --gold:#D6A63A;
+      --ink:#152238;
+      --muted:#637083;
+      --red:#B42318;
+      --paper:#FBFDFF;
+      --soft:#F3F8FC;
+    }
+    .reveal{font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;color:var(--ink);background:linear-gradient(140deg,#ffffff 0%,#f6fbff 52%,#edf6ff 100%);} 
+    .reveal .slides{ text-align:left; }
+    .reveal h1,.reveal h2,.reveal h3{font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;color:var(--navy);letter-spacing:-0.04em;text-transform:none;font-weight:850;}
+    .reveal h1{font-size:2.25em;line-height:0.98;margin-bottom:.25em;}
+    .reveal h2{font-size:1.55em;line-height:1.05;margin-bottom:.45em;}
+    .reveal h3{font-size:1.03em;line-height:1.15;margin-bottom:.35em;color:#0d3c68;}
+    .reveal p,.reveal li{font-size:.56em;line-height:1.36;}
+    .reveal li{margin:.2em 0;}
+    .reveal small{font-size:.34em;color:var(--muted);line-height:1.3;}
+    .reveal a{color:var(--blue);}
+    .title-slide{height:100%;display:grid;grid-template-columns:1.08fr .92fr;gap:42px;align-items:center;}
+    .title-kicker{font-size:.44em;font-weight:800;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;}
+    .title-sub{font-size:.68em;color:#38516f;line-height:1.25;margin-top:20px;max-width:760px;}
+    .brandbar{position:absolute;left:0;right:0;bottom:0;height:12px;background:linear-gradient(90deg,var(--blue),var(--teal),var(--gold));}
+    .clinic-logo{font-weight:900;color:var(--navy);font-size:.58em;letter-spacing:-.02em;}
+    .clinic-logo span{color:var(--blue);}
+    .tagline{font-size:.34em;color:var(--muted);margin-top:4px;}
+    .hero-card{border-radius:34px;background:linear-gradient(160deg,var(--navy),#064a82 58%,#0784ba);color:white;min-height:420px;padding:42px;box-shadow:0 28px 70px rgba(11,42,74,.18);position:relative;overflow:hidden;}
+    .hero-card:before{content:"";position:absolute;inset:-80px -120px auto auto;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.12);}
+    .hero-card:after{content:"";position:absolute;right:32px;bottom:28px;width:160px;height:160px;border-radius:44% 56% 58% 42%;background:rgba(214,166,58,.28);filter:blur(2px);}
+    .hero-card h3{color:white;font-size:1.02em;margin-top:0;}
+    .hero-card p{color:#e8f6ff;font-size:.5em;}
+    .pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:#eaf5ff;color:var(--blue);font-weight:800;padding:7px 13px;font-size:.35em;letter-spacing:.02em;text-transform:uppercase;}
+    .pill.dark{background:rgba(255,255,255,.14);color:white;}
+    .pill.gold{background:#fff4d8;color:#8a6108;}
+    .footer{position:absolute;bottom:18px;left:48px;right:48px;display:flex;justify-content:space-between;align-items:center;font-size:.26em;color:#789;}
+    .section-number{font-size:.38em;color:var(--blue);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;}
+    .big-message{font-size:1.13em;line-height:1.08;font-weight:850;color:var(--navy);letter-spacing:-.04em;}
+    .sub-message{font-size:.58em;color:#3e546b;line-height:1.35;margin-top:18px;}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;}
+    .two-col.wide-left{grid-template-columns:1.2fr .8fr;}
+    .two-col.wide-right{grid-template-columns:.84fr 1.16fr;}
+    .three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch;}
+    .four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:stretch;}
+    .card{background:rgba(255,255,255,.86);border:1px solid #dceaf5;border-radius:22px;padding:22px;box-shadow:0 14px 36px rgba(42,85,120,.08);}
+    .card.soft{background:var(--soft);box-shadow:none;}
+    .card.blue{background:linear-gradient(150deg,#e8f5ff,#fff);border-color:#cfe6fa;}
+    .card.gold{background:linear-gradient(150deg,#fff7df,#fff);border-color:#f4df9e;}
+    .card.green{background:linear-gradient(150deg,#e9fbf7,#fff);border-color:#c8ece4;}
+    .card.red{background:linear-gradient(150deg,#fff0ef,#fff);border-color:#ffd1cc;}
+    .card h3{font-size:.68em;margin:0 0 8px;color:var(--navy);}
+    .card p,.card li{font-size:.48em;color:#2d4057;}
+    .callout{border-left:8px solid var(--gold);background:#fff8e6;border-radius:18px;padding:20px 24px;margin:20px 0;color:#4e3910;}
+    .callout p{font-size:.58em;margin:0;font-weight:700;}
+    .danger{border-left-color:var(--red);background:#fff1f0;color:#64120d;}
+    .success{border-left-color:var(--green);background:#eafaf6;color:#0c5647;}
+    .flow{display:flex;align-items:center;gap:12px;flex-wrap:nowrap;margin-top:22px;}
+    .node{background:white;border:2px solid #d9eaf5;border-radius:18px;padding:15px 16px;min-width:120px;text-align:center;box-shadow:0 10px 24px rgba(26,63,95,.08);font-size:.43em;font-weight:800;color:var(--navy);}
+    .node.blue{border-color:#9bd0f6;background:#eaf6ff;}
+    .node.green{border-color:#a7e6d8;background:#eafff9;}
+    .node.gold{border-color:#efd07c;background:#fff7de;}
+    .arrow{font-size:.64em;color:var(--blue);font-weight:900;}
+    .matrix{width:100%;border-collapse:separate;border-spacing:0 10px;font-size:.48em;}
+    .matrix th{text-align:left;color:var(--blue);font-size:.8em;padding:0 12px 4px;font-weight:850;}
+    .matrix td{background:white;border-top:1px solid #dceaf5;border-bottom:1px solid #dceaf5;padding:13px 12px;vertical-align:top;}
+    .matrix td:first-child{border-left:1px solid #dceaf5;border-radius:14px 0 0 14px;font-weight:800;color:var(--navy);}
+    .matrix td:last-child{border-right:1px solid #dceaf5;border-radius:0 14px 14px 0;}
+    .timeline{display:grid;grid-template-columns:80px 1fr;gap:12px;margin-top:10px;}
+    .time{font-size:.38em;font-weight:900;color:var(--blue);text-align:right;padding-top:14px;}
+    .agenda-item{background:white;border:1px solid #dceaf5;border-radius:17px;padding:12px 16px;box-shadow:0 10px 24px rgba(26,63,95,.06);}
+    .agenda-item h3{font-size:.54em;margin:0 0 4px;}
+    .agenda-item p{font-size:.39em;margin:0;color:var(--muted);}
+    .phase{padding:16px;border-radius:18px;background:white;border:1px solid #dceaf5;min-height:160px;}
+    .phase .emoji{font-size:1.2em;display:block;margin-bottom:6px;}
+    .phase h3{font-size:.55em;}
+    .phase p{font-size:.4em;color:#496078;}
+    .quote{font-size:.9em;line-height:1.18;font-weight:850;color:var(--navy);letter-spacing:-.035em;margin:24px 0;}
+    .mini{font-size:.42em;color:var(--muted);}
+    .checklist{list-style:none;margin-left:0;padding-left:0;}
+    .checklist li{padding-left:28px;position:relative;}
+    .checklist li:before{content:"✓";position:absolute;left:0;top:0;color:var(--green);font-weight:900;}
+    .xlist{list-style:none;margin-left:0;padding-left:0;}
+    .xlist li{padding-left:28px;position:relative;}
+    .xlist li:before{content:"✕";position:absolute;left:0;top:0;color:var(--red);font-weight:900;}
+    .tag{display:inline-block;border-radius:999px;background:#edf6ff;border:1px solid #cfe6fa;padding:5px 10px;font-size:.32em;font-weight:850;color:#1165a0;margin:3px;}
+    .case-title{font-size:.98em;color:var(--navy);font-weight:900;margin-bottom:12px;}
+    .casebox{background:linear-gradient(140deg,#fff,#f4fbff);border:1px solid #dbeaf5;border-radius:24px;padding:24px;}
+    .casebox p,.casebox li{font-size:.48em;}
+    .question{background:#0b2a4a;color:white;border-radius:22px;padding:20px;margin-top:18px;}
+    .question p{font-size:.58em;font-weight:800;margin:0;color:white;}
+    .answer{background:#eafaf6;color:#0b604c;border-radius:18px;padding:18px;margin-top:14px;border:1px solid #b7eadf;}
+    .answer p{font-size:.5em;margin:0;color:#0b604c;}
+    .progress{position:absolute;top:22px;right:48px;font-size:.3em;font-weight:900;color:#87a6bf;letter-spacing:.08em;text-transform:uppercase;}
+    .refs li{font-size:.34em;line-height:1.25;margin:.45em 0;color:#34495e;}
+    .slide-tagline{font-size:.35em;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:8px;}
+    .large-number{font-size:2.8em;line-height:.85;color:#dcecf8;font-weight:950;letter-spacing:-.08em;float:right;margin-left:12px;}
+    .compact li{font-size:.43em;}
+    .split-diagram{display:grid;grid-template-columns:1fr 80px 1fr;align-items:center;gap:18px;margin-top:18px;}
+    .versus{height:80px;width:80px;border-radius:999px;background:var(--navy);color:white;display:grid;place-items:center;font-weight:900;font-size:.5em;}
+    .bottom-note{position:absolute;left:48px;right:48px;bottom:46px;font-size:.32em;color:#74869a;border-top:1px solid #dae9f3;padding-top:10px;}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#eef5fb;border:1px solid #d1e2ee;border-bottom-width:3px;border-radius:8px;padding:3px 7px;font-size:.9em;color:#335;}
+
+    .visual-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:24px;align-items:center;}
+    .svg-card{background:white;border:1px solid #dceaf5;border-radius:24px;padding:16px 18px;box-shadow:0 14px 36px rgba(42,85,120,.08);}
+    .mini-cardlist{display:grid;gap:12px;}
+    .mini-card{background:linear-gradient(155deg,#ffffff,#f6fbff);border:1px solid #dceaf5;border-radius:18px;padding:14px 16px;}
+    .mini-card h3{font-size:.54em;margin:0 0 4px;color:var(--navy);}
+    .mini-card p{font-size:.42em;margin:0;color:#456;}
+    .placeholder-photo{min-height:270px;border-radius:24px;border:2px dashed #c7dcec;background:linear-gradient(145deg,#f9fcff,#edf6ff);display:grid;place-items:center;text-align:center;padding:22px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7);}
+    .placeholder-photo .ph-big{font-size:.72em;font-weight:900;color:var(--blue);line-height:1.12;}
+    .placeholder-photo .ph-small{font-size:.42em;color:var(--muted);margin-top:10px;line-height:1.3;}
+    .case-image{width:100%;height:100%;min-height:270px;max-height:340px;object-fit:cover;border-radius:24px;border:1px solid #dceaf5;box-shadow:0 14px 36px rgba(42,85,120,.10);}
+    .case-layout{display:grid;grid-template-columns:1.08fr .92fr;gap:24px;align-items:stretch;}
+    .caption-note{font-size:.34em;color:var(--muted);margin-top:10px;line-height:1.3;}
+    .decision-flow{display:grid;gap:10px;max-width:960px;margin-top:10px;}
+    .decision-row{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;}
+    .decision-box{background:white;border:2px solid #dceaf5;border-radius:18px;padding:12px 16px;min-width:180px;text-align:center;box-shadow:0 10px 24px rgba(26,63,95,.06);}
+    .decision-box h3{font-size:.5em;margin:0 0 4px;color:var(--navy);}
+    .decision-box p{font-size:.38em;margin:0;color:#456;}
+    .decision-diamond{width:110px;height:110px;background:#fff7de;border:2px solid #efd07c;transform:rotate(45deg);display:grid;place-items:center;box-shadow:0 10px 24px rgba(26,63,95,.06);}
+    .decision-diamond > div{transform:rotate(-45deg);text-align:center;padding:0 8px;}
+    .decision-diamond h3{font-size:.42em;margin:0;color:#8a6108;line-height:1.15;}
+    .yesno{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:28px;padding:0 10px;border-radius:999px;font-size:.3em;font-weight:900;letter-spacing:.08em;text-transform:uppercase;}
+    .yes{background:#eafaf6;color:#0c5647;border:1px solid #b7eadf;}
+    .no{background:#fff1f0;color:#8c1d18;border:1px solid #ffd1cc;}
+    .svg-card svg text{font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;}
+
+    @media print {.reveal .slides section{page-break-after:always;}}
+  </style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-background-gradient="linear-gradient(135deg,#ffffff 0%,#edf7ff 55%,#e8f5ff 100%)">
+  <div class="title-slide">
+    <div>
+      <div class="clinic-logo">Klinik <span>Inocare</span></div>
+      <div class="tagline">Trusted Care. Inspired Innovation.</div>
+      <div style="height:52px"></div>
+      <div class="title-kicker">Doctor Training Workshop</div>
+      <h1>Bioprotein in Advanced Wound Management</h1>
+      <p class="title-sub">From patient selection to clinical application, documentation and follow-up.</p>
+      <div style="margin-top:32px">
+        <span class="pill">2–3 hours</span>
+        <span class="pill gold">Clinical competency</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span class="pill dark">Core message</span>
+      <h3 style="margin-top:34px">Advanced therapy works best when the basics are excellent.</h3>
+      <p>Assess the patient. Treat the cause. Prepare the wound. Apply only when indicated. Measure objectively.</p>
+      <div style="position:absolute;bottom:44px;left:42px;right:42px;z-index:2">
+        <div class="flow">
+          <div class="node blue">Assess</div><div class="arrow">→</div><div class="node green">Prepare</div><div class="arrow">→</div><div class="node gold">Apply</div><div class="arrow">→</div><div class="node">Review</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="brandbar"></div>
+  <aside class="notes">Opening: position this as a doctor competency workshop, not a product sales lecture. Emphasise that the goal is safe, rational use of bioprotein as an adjunct to proper wound care.</aside>
+</section>
+
+<section>
+  <div class="progress">Section 00</div>
+  <h2>How to run this workshop</h2>
+  <div class="two-col wide-left">
+    <div>
+      <p class="sub-message">Recommended format: a 2.5-hour master class that can expand to 3 hours or compress to 2 hours.</p>
+      <div class="timeline">
+        <div class="time">0–10</div><div class="agenda-item"><h3>Opening + pre-test</h3><p>Baseline knowledge and clinical framing.</p></div>
+        <div class="time">10–55</div><div class="agenda-item"><h3>Wound science + assessment</h3><p>Why wounds fail and how to assess safely.</p></div>
+        <div class="time">55–95</div><div class="agenda-item"><h3>Wound-bed preparation + bioprotein science</h3><p>TIME, aetiology-specific care and product positioning.</p></div>
+        <div class="time">95–105</div><div class="agenda-item"><h3>Break</h3><p>Reset before practical modules.</p></div>
+        <div class="time">105–150</div><div class="agenda-item"><h3>Selection + demonstration + hands-on</h3><p>Algorithm, simulated application and competency checklist.</p></div>
+      </div>
+    </div>
+    <div class="card blue">
+      <h3>Trainer setup</h3>
+      <ul class="checklist">
+        <li>Projector and internet-free deck backup</li>
+        <li>Wound photos or printed case cards</li>
+        <li>Simulated wound model</li>
+        <li>Demo vial/syringe/saline/needle pack</li>
+        <li>Procedure checklist and documentation form</li>
+        <li>Latest manufacturer IFU / Klinik SOP</li>
+      </ul>
+    </div>
+  </div>
+  <aside class="notes">Tell participants this session teaches decision-making and safe workflow. Product-specific procedural steps must follow the latest manufacturer IFU and local SOP.</aside>
+</section>
+
+<section>
+  <div class="progress">Section 00</div>
+  <h2>Learning outcomes</h2>
+  <div class="three-col">
+    <div class="card blue"><h3>Clinical judgement</h3><p>Identify wound aetiology, red flags and suitability for adjunctive therapy.</p></div>
+    <div class="card green"><h3>Practical technique</h3><p>Prepare the wound, reconstitute product safely and demonstrate simulated application.</p></div>
+    <div class="card gold"><h3>Governance</h3><p>Document objectively, follow up consistently and know when to escalate.</p></div>
+  </div>
+  <div class="callout success"><p>By the end, doctors should know when to use bioprotein — and just as importantly, when not to use it.</p></div>
+  <aside class="notes">Strongly set expectation: completion does not equal indiscriminate use. It means safe patient selection, proper technique and measurable follow-up.</aside>
+</section>
+
+<section>
+  <div class="progress">Opening activity</div>
+  <h2>Pre-test discussion</h2>
+  <div class="two-col">
+    <div class="card soft">
+      <h3>Ask the room</h3>
+      <ol>
+        <li>What is the commonest reason a chronic wound fails to heal?</li>
+        <li>Which wound should not receive advanced adjunctive therapy today?</li>
+        <li>How do you measure treatment response objectively?</li>
+      </ol>
+    </div>
+    <div class="card gold">
+      <h3>Trainer prompt</h3>
+      <p>Capture answers without correcting immediately. Return to these questions during the final recap.</p>
+      <p class="mini">Suggested tool: Mentimeter, show of hands, or printed MCQ sheet.</p>
+    </div>
+  </div>
+  <aside class="notes">This is a useful icebreaker. It also reveals whether participants think in terms of product choice or wound cause.</aside>
+</section>
+
+<section>
+  <div class="section-number">01 — Why wounds fail to heal</div>
+  <div class="big-message">A chronic wound is usually a symptom of an unresolved problem.</div>
+  <p class="sub-message">The wound surface is where we see the failure. The cause may be pressure, ischaemia, venous hypertension, infection, diabetes, nutrition, repeated trauma — or several of these at once.</p>
+  <div class="bottom-note">Teaching principle: do not start with “which dressing?” Start with “why is this wound still open?”</div>
+  <aside class="notes">Use this as the first conceptual anchor. Advanced therapy should not distract from fundamentals.</aside>
+</section>
+
+<section>
+  <div class="progress">01</div>
+  <h2>Normal wound healing: four overlapping phases</h2>
+  <div class="four-col">
+    <div class="phase"><span class="emoji">🩸</span><h3>Hemostasis</h3><p>Clot formation, platelet activation and early signalling.</p></div>
+    <div class="phase"><span class="emoji">🔥</span><h3>Inflammation</h3><p>Cell recruitment, bacterial control and debris clearance.</p></div>
+    <div class="phase"><span class="emoji">🌱</span><h3>Proliferation</h3><p>Granulation, angiogenesis, collagen deposition and epithelial movement.</p></div>
+    <div class="phase"><span class="emoji">🧵</span><h3>Remodelling</h3><p>Matrix maturation, tensile strength and scar evolution.</p></div>
+  </div>
+  <aside class="notes">Stress that these phases overlap. Chronic wounds often become stalled, particularly in persistent inflammation and high protease activity.</aside>
+</section>
+
+<section>
+  <div class="progress">01</div>
+  <h2>The chronic wound loop</h2>
+  <div class="flow" style="margin-top:44px">
+    <div class="node blue">Underlying cause</div><div class="arrow">→</div><div class="node">Inflammation</div><div class="arrow">→</div><div class="node gold">Tissue breakdown</div><div class="arrow">→</div><div class="node">Bioburden / exudate</div><div class="arrow">→</div><div class="node green">Edge fails to advance</div>
+  </div>
+  <div class="callout danger" style="margin-top:46px"><p>Adding an advanced product without breaking this loop may produce poor results and poor clinical confidence.</p></div>
+  <aside class="notes">This is a simplified teaching model. The key message is to break the loop by addressing cause and wound bed barriers.</aside>
+</section>
+
+<section>
+  <div class="progress">01</div>
+  <h2>Factors delaying healing</h2>
+  <div class="two-col">
+    <div class="card blue"><h3>Local barriers</h3><ul class="compact"><li>Necrotic tissue / slough</li><li>High bioburden or infection</li><li>Pressure and shear</li><li>Foreign body</li><li>Excess exudate or desiccation</li><li>Undermining / dead space</li><li>Repeated trauma</li></ul></div>
+    <div class="card green"><h3>Patient/system barriers</h3><ul class="compact"><li>Diabetes and hyperglycaemia</li><li>Peripheral arterial disease</li><li>Venous hypertension/oedema</li><li>Malnutrition or anaemia</li><li>Smoking</li><li>Renal disease / frailty</li><li>Immunosuppression</li></ul></div>
+  </div>
+  <aside class="notes">Ask participants to name one factor they often miss in clinic. This keeps the session interactive.</aside>
+</section>
+
+<section>
+  <div class="progress">01</div>
+  <h2>Clinical rule: treat the cause first</h2>
+  <div class="split-diagram">
+    <div class="card red"><h3>Weak approach</h3><p>“This wound is chronic. Let’s apply the advanced product.”</p></div>
+    <div class="versus">VS</div>
+    <div class="card green"><h3>Strong approach</h3><p>“What is the wound aetiology, what is delaying healing, and is the wound ready for adjunctive therapy?”</p></div>
+  </div>
+  <div class="quote">The product is not the plan. The plan is the plan.</div>
+  <aside class="notes">This line usually lands well with doctors. It reframes Cellmax as part of a clinical plan rather than the whole intervention.</aside>
+</section>
+
+<section>
+  <div class="section-number">02 — Structured wound assessment</div>
+  <div class="big-message">Assess the patient before you assess the wound.</div>
+  <p class="sub-message">A beautiful dressing on the wrong diagnosis is still the wrong treatment.</p>
+  <aside class="notes">Transition to assessment module. The quality of assessment determines the safety of application.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Start with the whole patient</h2>
+  <div class="visual-grid">
+    <div class="svg-card">
+      <svg viewBox="0 0 620 360" width="100%" height="320" role="img" aria-label="Patient assessment map">
+        <defs>
+          <linearGradient id="ptbg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f7fbff"/>
+            <stop offset="100%" stop-color="#e9f5ff"/>
+          </linearGradient>
+        </defs>
+        <rect x="18" y="18" width="584" height="324" rx="28" fill="url(#ptbg)" stroke="#dceaf5"/>
+        <circle cx="162" cy="86" r="32" fill="#cfe6fa" stroke="#0B2A4A" stroke-width="2"/>
+        <rect x="130" y="120" width="64" height="96" rx="26" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <rect x="92" y="130" width="34" height="96" rx="17" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <rect x="198" y="130" width="34" height="96" rx="17" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <rect x="132" y="214" width="24" height="88" rx="12" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <rect x="168" y="214" width="24" height="88" rx="12" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <ellipse cx="136" cy="310" rx="24" ry="10" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <ellipse cx="189" cy="310" rx="24" ry="10" fill="#d9edf9" stroke="#0B2A4A" stroke-width="2"/>
+        <rect x="296" y="42" width="258" height="52" rx="16" fill="#fff" stroke="#dceaf5"/>
+        <text x="314" y="64" font-size="18" font-weight="800" fill="#0B2A4A">History &amp; wound story</text>
+        <text x="314" y="84" font-size="13" fill="#456">duration • recurrence • pain • prior treatment • mobility • footwear</text>
+        <rect x="296" y="108" width="258" height="52" rx="16" fill="#fff" stroke="#dceaf5"/>
+        <text x="314" y="130" font-size="18" font-weight="800" fill="#0B2A4A">Comorbidities</text>
+        <text x="314" y="150" font-size="13" fill="#456">diabetes • PAD • venous disease • renal disease • smoking • nutrition</text>
+        <rect x="296" y="174" width="258" height="52" rx="16" fill="#fff" stroke="#dceaf5"/>
+        <text x="314" y="196" font-size="18" font-weight="800" fill="#0B2A4A">Risk context</text>
+        <text x="314" y="216" font-size="13" fill="#456">medications • allergies • anticoagulation • infection symptoms • social support</text>
+        <rect x="296" y="240" width="258" height="68" rx="16" fill="#fff7de" stroke="#efd07c"/>
+        <text x="314" y="262" font-size="18" font-weight="800" fill="#8a6108">Key question before bioprotein</text>
+        <text x="314" y="282" font-size="13" fill="#5c4a1c">What must be corrected for this wound to heal?</text>
+        <text x="314" y="300" font-size="13" fill="#5c4a1c">Examples: pressure, perfusion, oedema, infection, glucose, nutrition.</text>
+      </svg>
+    </div>
+    <div class="mini-cardlist">
+      <div class="mini-card"><h3>1. Assess the patient</h3><p>Do not let the wound distract you from the person attached to it.</p></div>
+      <div class="mini-card"><h3>2. Find the barrier</h3><p>Every chronic wound has one or more reasons for delayed healing.</p></div>
+      <div class="mini-card"><h3>3. Correct what you can</h3><p>Product use makes more sense after pressure, perfusion, infection and systemic issues are reviewed.</p></div>
+      <div class="callout"><p>Before considering bioprotein, ask: “What must be corrected for this wound to heal?”</p></div>
+    </div>
+  </div>
+  <aside class="notes">Make assessment pragmatic. A short, reproducible clinic checklist is better than a theoretical long form no one uses.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Lower-limb anatomy & bedside checks</h2>
+  <div class="visual-grid">
+    <div class="svg-card">
+      <svg viewBox="0 0 620 380" width="100%" height="330" role="img" aria-label="Lower-limb anatomy and pulse landmarks">
+        <rect x="22" y="18" width="576" height="344" rx="28" fill="#f8fbfe" stroke="#dceaf5"/>
+        <g transform="translate(54,30)">
+          <rect x="70" y="36" width="80" height="190" rx="36" fill="#e8f5ff" stroke="#0B2A4A" stroke-width="2.2"/>
+          <rect x="80" y="220" width="32" height="88" rx="16" fill="#e8f5ff" stroke="#0B2A4A" stroke-width="2.2"/>
+          <rect x="112" y="220" width="32" height="88" rx="16" fill="#e8f5ff" stroke="#0B2A4A" stroke-width="2.2"/>
+          <path d="M145 302 C180 304 202 306 215 320 C196 333 164 336 145 332" fill="#e8f5ff" stroke="#0B2A4A" stroke-width="2.2"/>
+          <circle cx="164" cy="304" r="6" fill="#0868B7"/>
+          <circle cx="126" cy="270" r="6" fill="#16A085"/>
+          <line x1="164" y1="304" x2="262" y2="280" stroke="#0868B7" stroke-width="2"/>
+          <line x1="126" y1="270" x2="262" y2="240" stroke="#16A085" stroke-width="2"/>
+          <text x="270" y="244" font-size="15" font-weight="800" fill="#16A085">Posterior tibial pulse</text>
+          <text x="270" y="263" font-size="12" fill="#456">behind medial malleolus</text>
+          <text x="270" y="283" font-size="15" font-weight="800" fill="#0868B7">Dorsalis pedis pulse</text>
+          <text x="270" y="302" font-size="12" fill="#456">dorsum of foot</text>
+          <path d="M108 82 C118 92 124 100 124 120 C124 140 116 154 108 168" stroke="#D6A63A" stroke-width="4" fill="none"/>
+          <line x1="112" y1="120" x2="262" y2="118" stroke="#D6A63A" stroke-width="2"/>
+          <text x="270" y="114" font-size="15" font-weight="800" fill="#8a6108">Common arterial-ulcer zone</text>
+          <text x="270" y="133" font-size="12" fill="#456">toes, lateral foot, pressure points with poor perfusion</text>
+          <path d="M84 188 C94 196 104 200 116 202" stroke="#B42318" stroke-width="4" fill="none"/>
+          <line x1="116" y1="200" x2="262" y2="178" stroke="#B42318" stroke-width="2"/>
+          <text x="270" y="174" font-size="15" font-weight="800" fill="#B42318">Common pressure / DFU zones</text>
+          <text x="270" y="193" font-size="12" fill="#456">heel, plantar forefoot, bony prominences, callused sites</text>
+        </g>
+      </svg>
+    </div>
+    <div class="mini-cardlist">
+      <div class="mini-card"><h3>Look deeper than the skin</h3><p>Ask whether tendon, fascia, bone or joint may be involved — and whether the wound anatomy has changed over time.</p></div>
+      <div class="mini-card"><h3>Always check circulation</h3><p>Palpate pulses, compare temperature, inspect colour and capillary refill, then escalate to Doppler/vascular review when needed.</p></div>
+      <div class="mini-card"><h3>Match wound zone to likely cause</h3><p>Plantar callused wounds suggest pressure/neuropathy; toe/lateral-foot wounds raise concern for ischaemia.</p></div>
+    </div>
+  </div>
+  <aside class="notes">This anatomy slide helps doctors visualise common wound zones and pulse landmarks before moving into aetiology and vascular safety.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Identify wound aetiology</h2>
+  <table class="matrix">
+    <thead><tr><th>Wound type</th><th>Clues</th><th>Do not miss</th></tr></thead>
+    <tbody>
+      <tr><td>Diabetic foot ulcer</td><td>Neuropathy, callus, plantar pressure, deformity</td><td>PAD, infection, osteomyelitis, offloading failure</td></tr>
+      <tr><td>Venous leg ulcer</td><td>Gaiter area, oedema, pigmentation, exudate</td><td>Compression safety and arterial assessment</td></tr>
+      <tr><td>Arterial ulcer</td><td>Pain, punched-out lesion, cool limb, weak pulses</td><td>Urgent vascular referral if limb threat</td></tr>
+      <tr><td>Pressure injury</td><td>Bony prominence, immobility, shear/friction</td><td>Pressure redistribution and nutrition</td></tr>
+      <tr><td>Post-op / trauma</td><td>Dehiscence, tissue injury, foreign body risk</td><td>Infection, dead space, surgical review</td></tr>
+    </tbody>
+  </table>
+  <aside class="notes">Ask participants to think aetiology first. Aetiology determines compression, offloading, referral and whether Cellmax is appropriate.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Use a repeatable wound assessment language</h2>
+  <div class="four-col">
+    <div class="card blue"><h3>S — Size</h3><p>Length × width × depth. Note undermining and tunnelling.</p></div>
+    <div class="card green"><h3>T — Tissue</h3><p>Granulation, slough, necrosis, exposed structures.</p></div>
+    <div class="card gold"><h3>I — Infection</h3><p>Local signs, spreading signs, systemic features.</p></div>
+    <div class="card"><h3>M/E/P</h3><p>Moisture, edge and periwound condition.</p></div>
+  </div>
+  <div class="bottom-note">Suggested clinic standard: same measurement method, same camera position, same follow-up interval where possible.</div>
+  <aside class="notes">This is a clinic standardisation slide. Encourage objective language instead of vague descriptions.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Infection: clinical judgement first</h2>
+  <div class="two-col">
+    <div class="card red"><h3>Look for</h3><ul class="compact"><li>Increasing pain</li><li>Erythema, warmth, swelling</li><li>Purulent discharge</li><li>Friable tissue / malodour</li><li>Delayed healing with inflammation</li><li>Fever or systemic symptoms</li></ul></div>
+    <div class="card blue"><h3>Then decide</h3><ul class="compact"><li>Local wound care only?</li><li>Culture when clinically indicated?</li><li>Antibiotics?</li><li>Imaging for osteomyelitis?</li><li>Drainage/debridement?</li><li>Referral?</li></ul></div>
+  </div>
+  <small>Reference anchor: IWGDF/IDSA diabetic foot infection guidance emphasises diagnosis and management of infection as a dedicated pathway.</small>
+  <aside class="notes">Do not present antibiotics as automatic for all chronic wounds. Infection diagnosis is clinical and context-specific.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Vascular status: the safety gate</h2>
+  <div class="visual-grid">
+    <div class="card red">
+      <h3>Red flags — stop and rethink</h3>
+      <ul class="xlist compact">
+        <li>Rest pain or pain out of proportion</li>
+        <li>Cold foot, pale/blue toes, delayed capillary refill</li>
+        <li>Gangrene / black toe / tissue necrosis</li>
+        <li>Absent or markedly reduced pedal pulses</li>
+        <li>Rapid deterioration or infected ischaemic wound</li>
+        <li>Systemic upset with a threatened limb</li>
+      </ul>
+      <div class="callout danger" style="margin-top:16px"><p>Do not let an advanced product delay vascular escalation.</p></div>
+    </div>
+    <div class="svg-card">
+      <svg viewBox="0 0 620 360" width="100%" height="300" role="img" aria-label="Vascular assessment pathway">
+        <rect x="18" y="22" width="170" height="60" rx="18" fill="#eaf6ff" stroke="#9bd0f6"/>
+        <text x="103" y="48" font-size="18" font-weight="800" fill="#0B2A4A" text-anchor="middle">Inspect &amp; palpate</text>
+        <text x="103" y="68" font-size="13" fill="#456" text-anchor="middle">colour • temperature • capillary refill • pulses</text>
+        <line x1="188" y1="52" x2="246" y2="52" stroke="#0868B7" stroke-width="3"/>
+        <polygon points="246,52 234,45 234,59" fill="#0868B7"/>
+        <rect x="246" y="22" width="160" height="60" rx="18" fill="#fff7de" stroke="#efd07c"/>
+        <text x="326" y="48" font-size="18" font-weight="800" fill="#8a6108" text-anchor="middle">Need objective test?</text>
+        <text x="326" y="68" font-size="13" fill="#5c4a1c" text-anchor="middle">handheld Doppler ± ABI/TBI if available</text>
+        <line x1="406" y1="52" x2="470" y2="52" stroke="#16A085" stroke-width="3"/>
+        <polygon points="470,52 458,45 458,59" fill="#16A085"/>
+        <rect x="470" y="22" width="132" height="60" rx="18" fill="#eafaf6" stroke="#b7eadf"/>
+        <text x="536" y="48" font-size="18" font-weight="800" fill="#0c5647" text-anchor="middle">Proceed safely</text>
+        <text x="536" y="68" font-size="13" fill="#0c5647" text-anchor="middle">if perfusion acceptable</text>
+        <rect x="34" y="120" width="236" height="198" rx="22" fill="#f8fbfe" stroke="#dceaf5"/>
+        <path d="M98 162 C124 120 170 118 184 170 C188 188 180 208 182 240 C184 270 201 284 228 290 C198 308 129 300 97 286 C72 274 59 249 61 220 C63 194 79 187 98 162Z" fill="#e8f5ff" stroke="#0B2A4A" stroke-width="2.2"/>
+        <circle cx="141" cy="270" r="6" fill="#16A085"/>
+        <circle cx="186" cy="289" r="6" fill="#0868B7"/>
+        <text x="54" y="146" font-size="17" font-weight="800" fill="#0B2A4A">Quick bedside landmarks</text>
+        <line x1="147" y1="270" x2="246" y2="236" stroke="#16A085" stroke-width="2"/>
+        <text x="250" y="232" font-size="14" font-weight="800" fill="#16A085">PT pulse</text>
+        <text x="250" y="249" font-size="12" fill="#456">behind medial malleolus</text>
+        <line x1="192" y1="289" x2="246" y2="280" stroke="#0868B7" stroke-width="2"/>
+        <text x="250" y="278" font-size="14" font-weight="800" fill="#0868B7">DP pulse</text>
+        <text x="250" y="295" font-size="12" fill="#456">dorsum of foot</text>
+        <rect x="324" y="118" width="278" height="88" rx="18" fill="#fff0ef" stroke="#ffd1cc"/>
+        <text x="343" y="144" font-size="17" font-weight="800" fill="#8c1d18">Urgent referral triggers</text>
+        <text x="343" y="166" font-size="13" fill="#64120d">threatened limb • infected ischaemic foot • gangrene • severe rest pain</text>
+        <text x="343" y="186" font-size="13" fill="#64120d">non-healing wound with clear perfusion concern</text>
+        <rect x="324" y="218" width="278" height="100" rx="18" fill="#ffffff" stroke="#dceaf5"/>
+        <text x="343" y="244" font-size="17" font-weight="800" fill="#0B2A4A">Practical message</text>
+        <text x="343" y="266" font-size="13" fill="#456">A non-healing wound with poor perfusion is not a product problem.</text>
+        <text x="343" y="286" font-size="13" fill="#456">It is a blood-flow problem until proven otherwise.</text>
+      </svg>
+      <div class="caption-note">ABI may be unreliable in diabetes because of calcified vessels. If available, toe pressure/TBI can be helpful, especially when the clinical picture and ABI do not match.</div>
+    </div>
+  </div>
+  <aside class="notes">This slide is critical for safety. Emphasise vascular referral for limb-threatening ischaemia and avoid a product-first response.</aside>
+</section>
+
+<section>
+  <div class="progress">02</div>
+  <h2>Documentation baseline</h2>
+  <table class="matrix">
+    <thead><tr><th>Parameter</th><th>Minimum standard</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td>Size</td><td>Length × width × depth in cm</td><td>Allows objective response tracking</td></tr>
+      <tr><td>Tissue</td><td>% granulation, slough, necrosis</td><td>Shows wound-bed trajectory</td></tr>
+      <tr><td>Exudate</td><td>Low / moderate / heavy</td><td>Guides dressing choice</td></tr>
+      <tr><td>Edge/periwound</td><td>Maceration, callus, undermining</td><td>Identifies barriers</td></tr>
+      <tr><td>Photo</td><td>Consent + consistent angle/distance</td><td>Clinical review and audit</td></tr>
+    </tbody>
+  </table>
+  <aside class="notes">Connect this to revenue/operations too: clear documentation supports review, referral letters, internal audit and patient communication.</aside>
+</section>
+
+<section>
+  <div class="section-number">03 — Wound-bed preparation</div>
+  <div class="big-message">Prepare the wound before applying advanced therapy.</div>
+  <p class="sub-message">Bioprotein should be considered only after basic barriers are assessed and managed: non-viable tissue, infection/inflammation, moisture imbalance and non-advancing edges.</p>
+  <aside class="notes">Transition to TIME framework.</aside>
+</section>
+
+<section>
+  <div class="progress">03</div>
+  <h2>TIME framework</h2>
+  <div class="visual-grid">
+    <div class="svg-card">
+      <svg viewBox="0 0 620 380" width="100%" height="320" role="img" aria-label="TIME wound bed preparation diagram">
+        <circle cx="310" cy="190" r="74" fill="#ffffff" stroke="#dceaf5" stroke-width="2"/>
+        <text x="310" y="180" text-anchor="middle" font-size="22" font-weight="800" fill="#0B2A4A">Wound bed</text>
+        <text x="310" y="206" text-anchor="middle" font-size="22" font-weight="800" fill="#0B2A4A">preparation</text>
+        <path d="M310 52 A138 138 0 0 1 448 190 L385 190 A75 75 0 0 0 310 115Z" fill="#eaf6ff" stroke="#9bd0f6"/>
+        <path d="M448 190 A138 138 0 0 1 310 328 L310 265 A75 75 0 0 0 385 190Z" fill="#fff0ef" stroke="#ffd1cc"/>
+        <path d="M310 328 A138 138 0 0 1 172 190 L235 190 A75 75 0 0 0 310 265Z" fill="#eafaf6" stroke="#b7eadf"/>
+        <path d="M172 190 A138 138 0 0 1 310 52 L310 115 A75 75 0 0 0 235 190Z" fill="#fff7de" stroke="#efd07c"/>
+        <text x="310" y="92" text-anchor="middle" font-size="32" font-weight="900" fill="#0868B7">T</text>
+        <text x="310" y="112" text-anchor="middle" font-size="14" fill="#456">Tissue</text>
+        <text x="486" y="194" text-anchor="middle" font-size="32" font-weight="900" fill="#B42318">I</text>
+        <text x="486" y="214" text-anchor="middle" font-size="14" fill="#456">Infection /</text>
+        <text x="486" y="232" text-anchor="middle" font-size="14" fill="#456">inflammation</text>
+        <text x="310" y="314" text-anchor="middle" font-size="32" font-weight="900" fill="#16A085">M</text>
+        <text x="310" y="334" text-anchor="middle" font-size="14" fill="#456">Moisture</text>
+        <text x="134" y="194" text-anchor="middle" font-size="32" font-weight="900" fill="#8a6108">E</text>
+        <text x="134" y="214" text-anchor="middle" font-size="14" fill="#456">Edge</text>
+      </svg>
+    </div>
+    <div class="mini-cardlist">
+      <div class="mini-card"><h3>T — Tissue</h3><p>Remove or reduce non-viable tissue so the wound bed can be assessed and treated accurately.</p></div>
+      <div class="mini-card"><h3>I — Infection / inflammation</h3><p>Control bacterial burden and inflammatory drivers before expecting a biological adjunct to perform well.</p></div>
+      <div class="mini-card"><h3>M — Moisture</h3><p>Choose dressings that absorb when needed, but avoid desiccation or periwound maceration.</p></div>
+      <div class="mini-card"><h3>E — Edge</h3><p>If the edge is not advancing, revisit aetiology, pressure, perfusion, infection and patient factors.</p></div>
+    </div>
+  </div>
+  <small>TIME is a systematic wound-bed preparation approach described in wound-care literature.</small>
+  <aside class="notes">Use this slide as a mental checklist, not as a rigid ritual. Apply it to the wound type.</aside>
+</section>
+
+<section>
+  <div class="progress">03</div>
+  <h2>Debridement: purpose and caution</h2>
+  <div class="two-col">
+    <div class="card green"><h3>Why debride?</h3><ul class="checklist compact"><li>Remove necrotic burden</li><li>Reduce slough and debris</li><li>Expose viable wound bed</li><li>Enable accurate assessment</li><li>Improve dressing contact</li></ul></div>
+    <div class="card red"><h3>Pause first when</h3><ul class="xlist compact"><li>Dry stable ischaemic eschar</li><li>Critical limb ischaemia suspected</li><li>Uncontrolled bleeding risk</li><li>Severe pain out of proportion</li><li>Need surgical/vascular input</li></ul></div>
+  </div>
+  <aside class="notes">Avoid teaching debridement as one-size-fits-all. Ischaemic wounds need caution.</aside>
+</section>
+
+<section>
+  <div class="progress">03</div>
+  <h2>Dressing choice: match the wound need</h2>
+  <table class="matrix">
+    <thead><tr><th>Wound feature</th><th>Dressing direction</th><th>Avoid</th></tr></thead>
+    <tbody>
+      <tr><td>Heavy exudate</td><td>Absorptive secondary dressing</td><td>Occlusion that worsens maceration</td></tr>
+      <tr><td>Dry wound bed</td><td>Moisture donation/retention</td><td>Further drying</td></tr>
+      <tr><td>Fragile periwound</td><td>Skin protection and atraumatic fixation</td><td>Repeated adhesive trauma</td></tr>
+      <tr><td>Dead space</td><td>Appropriate packing without overpacking</td><td>Superficial cover only</td></tr>
+      <tr><td>Pressure-related</td><td>Pressure redistribution/offloading</td><td>Dressing-only strategy</td></tr>
+    </tbody>
+  </table>
+  <aside class="notes">Keep this clinically pragmatic. Secondary dressing after Cellmax should still be selected according to exudate, tissue and periwound condition.</aside>
+</section>
+
+<section>
+  <div class="progress">03</div>
+  <h2>Aetiology-specific essentials</h2>
+  <div class="three-col">
+    <div class="card blue"><h3>DFU</h3><p>Offloading, callus care, infection assessment, vascular assessment and glycaemic optimisation.</p></div>
+    <div class="card green"><h3>VLU</h3><p>Compression pathway after arterial assessment, oedema control and skin care.</p></div>
+    <div class="card red"><h3>Arterial</h3><p>Perfusion assessment and vascular referral; avoid delaying limb-salvage decisions.</p></div>
+  </div>
+  <div class="callout"><p>Advanced therapy is layered on top of aetiology-specific care — not substituted for it.</p></div>
+  <aside class="notes">This is one of the core safety slides.</aside>
+</section>
+
+<section>
+  <div class="section-number">04 — Bioprotein science & Cellmax™ positioning</div>
+  <div class="big-message">Bioprotein is best taught as a biological signal support — not a miracle wound closure promise.</div>
+  <p class="sub-message">The scientific story should be mechanistic, cautious and clinically governed.</p>
+  <aside class="notes">Transition carefully. Keep tone scientific.</aside>
+</section>
+
+<section>
+  <div class="progress">04</div>
+  <h2>What do we mean by “bioprotein”?</h2>
+  <div class="two-col">
+    <div class="card blue"><h3>Concept</h3><p>A cell-free mixture of bioactive signalling molecules intended to support tissue-repair processes.</p></div>
+    <div class="card green"><h3>Language to use</h3><p>Secretome, cytokines, chemokines, growth factors, angiogenic signalling, fibroblast activity and epithelialisation.</p></div>
+  </div>
+  <div class="bottom-note">Avoid overclaiming. Mechanistic plausibility does not guarantee an individual clinical result.</div>
+  <aside class="notes">Keep the terminology accessible. Doctors can understand growth-factor biology, but patients should hear simpler explanations.</aside>
+</section>
+
+<section>
+  <div class="progress">04</div>
+  <h2>Proposed biological roles in wound repair</h2>
+  <div class="visual-grid">
+    <div class="svg-card">
+      <svg viewBox="0 0 620 360" width="100%" height="300" role="img" aria-label="Bioprotein support mechanism diagram">
+        <circle cx="310" cy="182" r="62" fill="#ffffff" stroke="#dceaf5" stroke-width="2"/>
+        <text x="310" y="174" text-anchor="middle" font-size="20" font-weight="800" fill="#0B2A4A">Healing</text>
+        <text x="310" y="198" text-anchor="middle" font-size="20" font-weight="800" fill="#0B2A4A">environment</text>
+        <circle cx="156" cy="94" r="50" fill="#eaf6ff" stroke="#9bd0f6"/>
+        <text x="156" y="92" text-anchor="middle" font-size="17" font-weight="800" fill="#0868B7">Bioactive</text>
+        <text x="156" y="112" text-anchor="middle" font-size="17" font-weight="800" fill="#0868B7">signals</text>
+        <circle cx="468" cy="94" r="50" fill="#eafaf6" stroke="#b7eadf"/>
+        <text x="468" y="92" text-anchor="middle" font-size="17" font-weight="800" fill="#16A085">Cell</text>
+        <text x="468" y="112" text-anchor="middle" font-size="17" font-weight="800" fill="#16A085">recruitment</text>
+        <circle cx="156" cy="270" r="50" fill="#fff7de" stroke="#efd07c"/>
+        <text x="156" y="268" text-anchor="middle" font-size="17" font-weight="800" fill="#8a6108">Angiogenesis</text>
+        <text x="156" y="288" text-anchor="middle" font-size="12" fill="#8a6108">+ perfusion support</text>
+        <circle cx="468" cy="270" r="50" fill="#fff0ef" stroke="#ffd1cc"/>
+        <text x="468" y="268" text-anchor="middle" font-size="17" font-weight="800" fill="#B42318">Fibroblast</text>
+        <text x="468" y="288" text-anchor="middle" font-size="12" fill="#B42318">activity / matrix</text>
+        <line x1="198" y1="118" x2="258" y2="154" stroke="#0868B7" stroke-width="3"/>
+        <line x1="422" y1="118" x2="362" y2="154" stroke="#16A085" stroke-width="3"/>
+        <line x1="198" y1="246" x2="258" y2="210" stroke="#8a6108" stroke-width="3"/>
+        <line x1="422" y1="246" x2="362" y2="210" stroke="#B42318" stroke-width="3"/>
+      </svg>
+    </div>
+    <div class="mini-cardlist">
+      <div class="mini-card"><h3>How to explain it</h3><p>Bioprotein is best framed as biological signal support that may improve the wound-healing environment.</p></div>
+      <div class="mini-card"><h3>What not to say</h3><p>Avoid teaching it as a guaranteed wound-closure shortcut or a replacement for wound fundamentals.</p></div>
+      <div class="callout success"><p>Teach the mechanism as “supporting the healing environment”, not “forcing the wound to heal”.</p></div>
+    </div>
+  </div>
+  <aside class="notes">Cellmax website describes growth factors including FGF2, TGF-beta1 and VEGF-A; avoid long molecular detail in a short clinical session.</aside>
+</section>
+
+<section>
+  <div class="progress">04</div>
+  <h2>Cellmax™ regulatory anchor</h2>
+  <div class="casebox">
+    <div class="large-number">MDA</div>
+    <h3>Cellmax™ Freeze Dried Powder</h3>
+    <p><strong>MDA Registration No:</strong> GD8996426-239437</p>
+    <p><strong>Clinical framing:</strong> healthcare-professional use as an adjunct to standard wound care for selected adult chronic/non-healing wounds within the registered intended purpose.</p>
+    <p><strong>Training implication:</strong> use current MDA registration, latest IFU and Klinik Inocare SOP as controlling references.</p>
+  </div>
+  <aside class="notes">Do not let this slide become a legal lecture. It is here to anchor appropriate positioning and avoid promotional overreach.</aside>
+</section>
+
+<section>
+  <div class="progress">04</div>
+  <h2>What Cellmax™ is not</h2>
+  <div class="three-col">
+    <div class="card red"><h3>Not first-line alone</h3><p>It does not replace wound-bed preparation, offloading, compression, antibiotics when indicated or vascular care.</p></div>
+    <div class="card red"><h3>Not for every wound</h3><p>Patient selection matters. Some wounds need urgent referral or cause correction first.</p></div>
+    <div class="card red"><h3>Not a guarantee</h3><p>Response must be monitored objectively. Non-response requires reassessment.</p></div>
+  </div>
+  <aside class="notes">This slide increases clinician trust because it shows balanced governance.</aside>
+</section>
+
+<section>
+  <div class="progress">04</div>
+  <h2>Product-specific IFU caution</h2>
+  <div class="callout danger"><p>Do not invent dosing, injection-point count or volume-per-area during training. These must come from the current manufacturer IFU / approved Klinik SOP.</p></div>
+  <div class="two-col">
+    <div class="card blue"><h3>From public manufacturer material</h3><p>Published Cellmax information describes reconstitution of a freeze-dried 2 mL vial with 2 mL sodium chloride and subcutaneous application by trained medical personnel.</p></div>
+    <div class="card gold"><h3>For final live training</h3><p>Insert the latest authorised table for wound area, application volume and injection distribution from the current IFU.</p></div>
+  </div>
+  <aside class="notes">This protects the clinic. The public website mentions Table 2, but the trainer should use the actual IFU/manual.</aside>
+</section>
+
+<section>
+  <div class="section-number">05 — Patient selection</div>
+  <div class="big-message">The best outcome starts with the right wound, at the right time, in the right patient.</div>
+  <p class="sub-message">A simple algorithm helps doctors decide whether to proceed, optimise first or refer.</p>
+  <aside class="notes">Transition to algorithm.</aside>
+</section>
+
+<section>
+  <div class="progress">05</div>
+  <h2>Selection algorithm</h2>
+  <div class="decision-flow">
+    <div class="decision-row">
+      <div class="decision-box"><h3>Start</h3><p>Chronic / non-healing wound</p></div>
+      <div class="arrow">→</div>
+      <div class="decision-box"><h3>Step 1</h3><p>Identify wound aetiology</p></div>
+      <div class="arrow">→</div>
+      <div class="decision-diamond"><div><h3>Urgent red flags?</h3></div></div>
+    </div>
+    <div class="decision-row">
+      <span class="yesno no">Yes</span>
+      <div class="arrow">→</div>
+      <div class="decision-box" style="border-color:#ffd1cc;background:#fff1f0;"><h3>Do not proceed routinely</h3><p>Treat, stabilise or refer first</p></div>
+    </div>
+    <div class="decision-row">
+      <span class="yesno yes">No</span>
+      <div class="arrow">→</div>
+      <div class="decision-box"><h3>Step 2</h3><p>Prepare wound bed (TIME)</p></div>
+      <div class="arrow">→</div>
+      <div class="decision-diamond"><div><h3>Cause addressed well enough?</h3></div></div>
+      <div class="arrow">→</div>
+      <div class="decision-box"><h3>Step 3</h3><p>Check IFU indication + consent</p></div>
+      <div class="arrow">→</div>
+      <div class="decision-box" style="border-color:#efd07c;background:#fff7de;"><h3>Proceed</h3><p>Apply + document + review</p></div>
+    </div>
+  </div>
+  <div class="bottom-note">If any safety gate fails, do not proceed as routine. Optimise, treat or refer first.</div>
+  <aside class="notes">Use this as the central practical decision slide.</aside>
+</section>
+
+<section>
+  <div class="progress">05</div>
+  <h2>Proceed only when the basics are addressed</h2>
+  <div class="two-col">
+    <div class="card green"><h3>Favourable profile</h3><ul class="checklist compact"><li>Chronic/non-healing wound within intended use</li><li>Cause identified</li><li>No uncontrolled infection</li><li>Perfusion acceptable or assessed</li><li>Pressure/oedema addressed</li><li>Wound bed prepared</li><li>Follow-up feasible</li></ul></div>
+    <div class="card red"><h3>Delay or refer</h3><ul class="xlist compact"><li>Critical ischaemia/gangrene</li><li>Spreading infection/sepsis</li><li>Suspected deep abscess</li><li>Possible osteomyelitis needing workup</li><li>Uncorrected pressure/offloading failure</li><li>Unclear diagnosis or atypical wound</li></ul></div>
+  </div>
+  <aside class="notes">Tailor contraindications/precautions to actual IFU and clinic SOP. This slide is a training version.</aside>
+</section>
+
+<section>
+  <div class="progress">05</div>
+  <h2>Consent conversation</h2>
+  <div class="casebox">
+    <h3>Suggested explanation to patient</h3>
+    <p>“This treatment is an additional therapy used together with standard wound care. We still need to control infection, pressure, blood flow, sugar level and dressing care. We will measure and photograph the wound so we can see whether it is responding.”</p>
+  </div>
+  <div class="three-col" style="margin-top:18px">
+    <div class="card"><h3>Explain</h3><p>Purpose, steps, expected review schedule.</p></div>
+    <div class="card"><h3>Disclose</h3><p>Uncertainty, alternatives, cost, possible discomfort/risks.</p></div>
+    <div class="card"><h3>Document</h3><p>Consent, wound baseline, product batch and plan.</p></div>
+  </div>
+  <aside class="notes">Patient communication should be factual and not guarantee closure.</aside>
+</section>
+
+<section>
+  <div class="section-number">06 — Practical application workflow</div>
+  <div class="big-message">Standardise the procedure from room setup to follow-up.</div>
+  <p class="sub-message">Variation in preparation, application and documentation makes outcomes difficult to interpret.</p>
+  <aside class="notes">Introduce practical module. Use demonstration materials here.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Procedure room setup</h2>
+  <div class="three-col">
+    <div class="card blue"><h3>Aseptic field</h3><p>Clean trolley, PPE, sterile consumables, sharps container and waste disposal.</p></div>
+    <div class="card green"><h3>Wound kit</h3><p>Normal saline, gauze, debridement tools if appropriate, ruler, camera, dressing set.</p></div>
+    <div class="card gold"><h3>Product kit</h3><p>Cellmax vial, sodium chloride for reconstitution, syringe/needle, batch documentation.</p></div>
+  </div>
+  <aside class="notes">Adapt to local clinic room availability. The standard is consistent aseptic setup.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Step 1: confirm before opening product</h2>
+  <div class="two-col">
+    <div class="card"><h3>Patient check</h3><ul class="checklist compact"><li>Identity</li><li>Consent</li><li>Allergy/precaution review</li><li>Indication confirmed</li><li>Red flags excluded</li></ul></div>
+    <div class="card"><h3>Product check</h3><ul class="checklist compact"><li>Correct product</li><li>Package integrity</li><li>Expiry date</li><li>Storage condition</li><li>Batch/lot number recorded</li></ul></div>
+  </div>
+  <aside class="notes">This is a safety checklist slide. Use a pause point before product use.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Step 2: prepare the wound</h2>
+  <div class="flow" style="margin-top:34px">
+    <div class="node blue">Remove dressing</div><div class="arrow">→</div><div class="node">Cleanse</div><div class="arrow">→</div><div class="node green">Assess</div><div class="arrow">→</div><div class="node gold">Debride if appropriate</div><div class="arrow">→</div><div class="node">Re-measure + photo</div>
+  </div>
+  <div class="callout"><p>Do not proceed blindly. The wound may have changed since the last review.</p></div>
+  <aside class="notes">Demonstrate cleaning and measurement. Reassess before deciding to continue.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Step 3: reconstitute according to IFU</h2>
+  <div class="two-col wide-left">
+    <div class="card blue">
+      <h3>Teaching sequence</h3>
+      <ol>
+        <li>Maintain aseptic technique.</li>
+        <li>Reconstitute using the authorised diluent/volume.</li>
+        <li>Inspect solution before use.</li>
+        <li>Use within the IFU/SOP-defined conditions.</li>
+      </ol>
+    </div>
+    <div class="card gold">
+      <h3>Current public note</h3>
+      <p>Public Cellmax material describes a freeze-dried 2 mL vial mixed with 2 mL sodium chloride, producing a clear liquid without sediment.</p>
+    </div>
+  </div>
+  <aside class="notes">Replace public note with exact IFU wording for live training. Do not rely on memory during teaching.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Step 4: application planning</h2>
+  <div class="visual-grid">
+    <div class="svg-card">
+      <svg viewBox="0 0 620 360" width="100%" height="300" role="img" aria-label="Wound cross-section planning illustration">
+        <rect x="32" y="38" width="556" height="250" rx="30" fill="#f8fbfe" stroke="#dceaf5"/>
+        <path d="M78 122 C132 96 204 98 246 126 C284 151 338 150 376 126 C418 98 490 96 544 122 L544 228 L78 228 Z" fill="#f2d7c9"/>
+        <path d="M114 122 C144 160 170 186 220 194 C270 202 286 168 310 156 C334 168 350 202 400 194 C450 186 476 160 506 122" fill="none" stroke="#b97963" stroke-width="22" stroke-linecap="round"/>
+        <path d="M238 144 C260 174 288 194 310 198 C332 194 360 174 382 144" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+        <rect x="96" y="248" width="140" height="26" rx="10" fill="#eaf6ff" stroke="#9bd0f6"/>
+        <text x="166" y="266" text-anchor="middle" font-size="14" font-weight="800" fill="#0868B7">Periwound skin</text>
+        <rect x="240" y="248" width="140" height="26" rx="10" fill="#fff7de" stroke="#efd07c"/>
+        <text x="310" y="266" text-anchor="middle" font-size="14" font-weight="800" fill="#8a6108">Wound edge / margin</text>
+        <rect x="384" y="248" width="140" height="26" rx="10" fill="#eafaf6" stroke="#b7eadf"/>
+        <text x="454" y="266" text-anchor="middle" font-size="14" font-weight="800" fill="#16A085">Wound base / floor</text>
+        <line x1="168" y1="248" x2="170" y2="212" stroke="#0868B7" stroke-width="2"/>
+        <line x1="310" y1="248" x2="248" y2="162" stroke="#8a6108" stroke-width="2"/>
+        <line x1="454" y1="248" x2="362" y2="176" stroke="#16A085" stroke-width="2"/>
+        <rect x="400" y="52" width="150" height="48" rx="14" fill="#ffffff" stroke="#dceaf5"/>
+        <text x="475" y="74" text-anchor="middle" font-size="16" font-weight="800" fill="#0B2A4A">Plan treatment zone</text>
+        <text x="475" y="92" text-anchor="middle" font-size="12" fill="#456">based on IFU / SOP and wound size</text>
+      </svg>
+    </div>
+    <div class="mini-cardlist">
+      <div class="mini-card"><h3>Map the wound first</h3><p>Identify the true wound edge, wound base, fragile structures, pain-sensitive areas and any undermining before planning application.</p></div>
+      <div class="mini-card"><h3>Use the authorised table</h3><p>Application volume, spacing and number of points must follow the latest IFU / Klinik SOP.</p></div>
+      <div class="mini-card"><h3>Think beyond the product</h3><p>After application, your dressing strategy and cause-specific care still determine what happens over the next days and weeks.</p></div>
+      <div class="caption-note">Public Cellmax material describes subcutaneous application at/near the wound edge and wound base/floor by trained medical personnel. Use the latest IFU for the live procedural demonstration.</div>
+    </div>
+  </div>
+  <aside class="notes">During live demo, point out anatomy and avoid unsupported procedural detail not present in the current IFU.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Step 5: secondary dressing</h2>
+  <div class="three-col">
+    <div class="card blue"><h3>Protect</h3><p>Protect the treated wound bed and fragile periwound.</p></div>
+    <div class="card green"><h3>Balance</h3><p>Choose dressing based on exudate, depth and tissue type.</p></div>
+    <div class="card gold"><h3>Support cause care</h3><p>Continue offloading, compression pathway or pressure redistribution where indicated.</p></div>
+  </div>
+  <div class="callout success"><p>Application is one procedural moment. Healing depends on everything that happens afterwards.</p></div>
+  <aside class="notes">Emphasise patient education at this point: keep dressing intact, return as scheduled, warning signs.</aside>
+</section>
+
+<section>
+  <div class="progress">06</div>
+  <h2>Post-procedure orders & follow-up</h2>
+  <table class="matrix">
+    <thead><tr><th>Area</th><th>Document / instruct</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Procedure</td><td>Product, batch, reconstitution, application sites, dressing</td><td>Use clinic procedure template</td></tr>
+      <tr><td>Patient advice</td><td>Warning signs and dressing care</td><td>Pain, fever, spreading redness, leakage</td></tr>
+      <tr><td>Cause control</td><td>Offloading/compression/glucose/nutrition</td><td>Specific written plan</td></tr>
+      <tr><td>Review</td><td>Date and objective reassessment</td><td>Photo + measurement at each review</td></tr>
+    </tbody>
+  </table>
+  <aside class="notes">This slide makes it operational. Assign responsibility: who documents, who photographs, who schedules review?</aside>
+</section>
+
+<section>
+  <div class="section-number">07 — Case-based practice</div>
+  <div class="big-message">Cases convert product knowledge into clinical judgement.</div>
+  <p class="sub-message">Ask doctors to decide: proceed, optimise first, or refer.</p>
+  <aside class="notes">These cases should be interactive. Let groups discuss for 3–5 minutes per case.</aside>
+</section>
+
+<section>
+  <div class="progress">Case 1</div>
+  <div class="case-title">Case 1 — Plantar diabetic foot ulcer</div>
+  <div class="case-layout">
+    <div>
+      <div class="casebox">
+        <p><strong>Patient:</strong> 55-year-old man, diabetes, HbA1c 9.2%, plantar forefoot ulcer for 8 weeks.</p>
+        <p><strong>Wound:</strong> callus edge, moderate exudate, reduced sensation, no fever, no spreading cellulitis.</p>
+        <p><strong>Clinic issue:</strong> patient asks for the “new wound injection” today.</p>
+      </div>
+      <div class="question"><p>Would you apply bioprotein today?</p></div>
+    </div>
+    <!-- CASE1_IMAGE_SLOT: replace the placeholder below with <img class="case-image" src="assets/cases/case-01-dfu.jpg" alt="De-identified plantar diabetic foot ulcer case photograph"> -->
+    <div class="placeholder-photo"><div><div class="ph-big">Insert real DFU photo here later</div><div class="ph-small">Suggested image: plantar wound photo ± offloading footwear photo.<br>Optional second image: pedal pulses / Doppler / X-ray.</div></div></div>
+  </div>
+  <aside class="notes">Expected discussion: offloading and callus/debridement are critical; check perfusion, infection, footwear/adherence, glucose. Application may be considered only after basics are addressed and IFU indication confirmed.</aside>
+</section>
+
+<section>
+  <div class="progress">Case 1 answer</div>
+  <h2>Case 1 — teaching answer</h2>
+  <div class="answer"><p>Possible, but not automatically. First confirm perfusion, manage callus/wound bed, ensure offloading and address glycaemic/systemic barriers.</p></div>
+  <div class="three-col" style="margin-top:20px">
+    <div class="card"><h3>Must do</h3><p>Offloading plan and debridement/callus management.</p></div>
+    <div class="card"><h3>Must check</h3><p>Infection and PAD screen.</p></div>
+    <div class="card"><h3>Then consider</h3><p>Adjunctive bioprotein if wound is suitable and follow-up is reliable.</p></div>
+  </div>
+  <aside class="notes">This case is designed to stop a product-first reflex.</aside>
+</section>
+
+<section>
+  <div class="progress">Case 2</div>
+  <div class="case-title">Case 2 — Venous leg ulcer</div>
+  <div class="case-layout">
+    <div>
+      <div class="casebox">
+        <p><strong>Patient:</strong> 68-year-old woman with medial gaiter ulcer for 6 months.</p>
+        <p><strong>Wound:</strong> heavy exudate, oedema, haemosiderin pigmentation, irregular shallow ulcer.</p>
+        <p><strong>Clinic issue:</strong> recurrent dressings but no clear compression pathway.</p>
+      </div>
+      <div class="question"><p>Is bioprotein the first intervention?</p></div>
+    </div>
+    <!-- CASE2_IMAGE_SLOT: replace the placeholder below with <img class="case-image" src="assets/cases/case-02-vlu.jpg" alt="De-identified venous leg ulcer case photograph"> -->
+    <div class="placeholder-photo"><div><div class="ph-big">Insert real VLU photo here later</div><div class="ph-small">Suggested image: medial gaiter ulcer with oedema.<br>Optional second image: compression bandage system or venous skin changes.</div></div></div>
+  </div>
+  <aside class="notes">Expected: No, not first. Assess arterial supply and start/optimise compression pathway if appropriate; manage oedema and exudate. Bioprotein may be adjunctive later if wound remains non-healing and suitable.</aside>
+</section>
+
+<section>
+  <div class="progress">Case 3</div>
+  <div class="case-title">Case 3 — The dangerous diabetic foot</div>
+  <div class="case-layout">
+    <div>
+      <div class="casebox">
+        <p><strong>Patient:</strong> 62-year-old diabetic, increasing foot pain and black toe.</p>
+        <p><strong>Wound:</strong> cool foot, weak/absent pulse, surrounding cellulitis, malodour.</p>
+        <p><strong>Clinic issue:</strong> family requests advanced wound therapy to avoid hospital referral.</p>
+      </div>
+      <div class="question"><p>Cellmax or urgent referral?</p></div>
+    </div>
+    <!-- CASE3_IMAGE_SLOT: replace the placeholder below with <img class="case-image" src="assets/cases/case-03-limb-threat.jpg" alt="De-identified ischaemic diabetic foot case photograph"> -->
+    <div class="placeholder-photo"><div><div class="ph-big">Insert real limb-threat case photo here later</div><div class="ph-small">Suggested image: gangrenous toe / ischaemic foot.<br>Optional second image: Doppler result or referral pathway visual.</div></div></div>
+  </div>
+  <aside class="notes">Expected: urgent referral. Possible ischaemia + infection/gangrene. Do not delay vascular/surgical assessment.</aside>
+</section>
+
+<section>
+  <div class="progress">Case 3 answer</div>
+  <h2>Case 3 — teaching answer</h2>
+  <div class="callout danger"><p>Do not proceed as routine. This is a limb-threatening scenario until proven otherwise.</p></div>
+  <div class="flow" style="margin-top:36px"><div class="node red">Recognise threat</div><div class="arrow">→</div><div class="node">Stabilise / initial care</div><div class="arrow">→</div><div class="node blue">Urgent referral</div><div class="arrow">→</div><div class="node green">Reassess later</div></div>
+  <aside class="notes">This is a high-yield competency checkpoint. Doctors must be able to say no to a product when referral is needed.</aside>
+</section>
+
+<section>
+  <div class="section-number">08 — Competency & governance</div>
+  <div class="big-message">A training programme is only useful if it changes practice reliably.</div>
+  <p class="sub-message">Use a short checklist, post-test and observed practical station.</p>
+  <aside class="notes">Close with practical governance for Klinik Inocare.</aside>
+</section>
+
+<section>
+  <div class="progress">08</div>
+  <h2>Observed competency checklist</h2>
+  <table class="matrix">
+    <thead><tr><th>Domain</th><th>Pass criteria</th><th>Trainer sign-off</th></tr></thead>
+    <tbody>
+      <tr><td>Assessment</td><td>Aetiology, infection, vascular status and red flags assessed</td><td>☐</td></tr>
+      <tr><td>Selection</td><td>Indication, contraindications/precautions and consent checked</td><td>☐</td></tr>
+      <tr><td>Preparation</td><td>Aseptic setup, wound-bed preparation and product check completed</td><td>☐</td></tr>
+      <tr><td>Application</td><td>Simulated application follows IFU/SOP workflow</td><td>☐</td></tr>
+      <tr><td>Follow-up</td><td>Objective documentation and review plan completed</td><td>☐</td></tr>
+    </tbody>
+  </table>
+  <aside class="notes">For live implementation, print this checklist as a one-page form.</aside>
+</section>
+
+<section>
+  <div class="progress">08</div>
+  <h2>Post-test questions</h2>
+  <div class="two-col">
+    <div class="card blue"><h3>Knowledge</h3><ol class="compact"><li>Name four barriers to chronic wound healing.</li><li>What does TIME stand for?</li><li>Name three red flags requiring referral.</li><li>Why is offloading essential in DFU?</li><li>Why should response be measured objectively?</li></ol></div>
+    <div class="card green"><h3>Application</h3><ol start="6" class="compact"><li>When should bioprotein be delayed?</li><li>What must be checked before opening product?</li><li>What information must be documented?</li><li>How do you counsel about expected outcomes?</li><li>What do you do if the wound deteriorates?</li></ol></div>
+  </div>
+  <aside class="notes">Suggested passing mark 80%. Keep it practical, not obscure.</aside>
+</section>
+
+<section>
+  <div class="progress">08</div>
+  <h2>Clinic documentation minimum set</h2>
+  <div class="three-col">
+    <div class="card"><h3>Baseline</h3><p>Diagnosis, aetiology, size, tissue, infection status, vascular screen, photo consent.</p></div>
+    <div class="card"><h3>Procedure</h3><p>Product, batch, expiry, reconstitution, application details, dressing and immediate tolerance.</p></div>
+    <div class="card"><h3>Review</h3><p>Serial measurements, photos, complications, adherence, next plan and escalation decision.</p></div>
+  </div>
+  <div class="callout success"><p>Good documentation makes outcome review possible — clinically, operationally and medico-legally.</p></div>
+  <aside class="notes">Encourage a single standard form used by all doctors.</aside>
+</section>
+
+<section>
+  <div class="progress">08</div>
+  <h2>When the wound is not improving</h2>
+  <div class="two-col wide-left">
+    <div>
+      <div class="quote">Do not simply repeat the same intervention. Reassess the diagnosis and the barriers.</div>
+      <p class="sub-message">Ask: infection? ischaemia? pressure? venous oedema? osteomyelitis? nutrition? glucose? adherence? atypical wound?</p>
+    </div>
+    <div class="card red"><h3>Escalate when</h3><ul class="xlist compact"><li>Deterioration</li><li>New necrosis</li><li>Spreading infection</li><li>Pain out of proportion</li><li>No meaningful progress</li><li>Diagnostic uncertainty</li></ul></div>
+  </div>
+  <aside class="notes">Give permission to stop and rethink rather than continue due to sunk cost.</aside>
+</section>
+
+<section>
+  <div class="progress">Closing</div>
+  <h2>Five take-home messages</h2>
+  <div class="five" style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px">
+    <div class="card blue"><h3>1</h3><p>Diagnose the wound cause.</p></div>
+    <div class="card green"><h3>2</h3><p>Prepare the wound bed.</p></div>
+    <div class="card gold"><h3>3</h3><p>Select the right patient.</p></div>
+    <div class="card"><h3>4</h3><p>Apply according to IFU/SOP.</p></div>
+    <div class="card red"><h3>5</h3><p>Measure and reassess.</p></div>
+  </div>
+  <div class="callout"><p>Advanced wound therapy should be clinically disciplined, not product driven.</p></div>
+  <aside class="notes">Return to pre-test questions. Invite participants to describe one change they will make in practice.</aside>
+</section>
+
+<section>
+  <div class="section-number">Appendix</div>
+  <h2>Optional: 2-hour compressed agenda</h2>
+  <table class="matrix">
+    <thead><tr><th>Time</th><th>Content</th><th>Method</th></tr></thead>
+    <tbody>
+      <tr><td>0–10</td><td>Opening + objectives + pre-test</td><td>Interactive</td></tr>
+      <tr><td>10–35</td><td>Wound healing failure + assessment</td><td>Lecture</td></tr>
+      <tr><td>35–60</td><td>Wound-bed preparation + red flags</td><td>Lecture/cases</td></tr>
+      <tr><td>60–80</td><td>Bioprotein science + Cellmax positioning</td><td>Lecture</td></tr>
+      <tr><td>80–105</td><td>Patient selection + practical workflow</td><td>Algorithm/demo</td></tr>
+      <tr><td>105–120</td><td>Case challenge + post-test</td><td>Discussion</td></tr>
+    </tbody>
+  </table>
+  <aside class="notes">Use this if the clinic can only allocate 2 hours. Hands-on practice becomes demonstration-based rather than full station-based.</aside>
+</section>
+
+<section>
+  <div class="section-number">Appendix</div>
+  <h2>Case-photo insertion guide</h2>
+  <div class="two-col wide-left">
+    <div class="card blue">
+      <h3>Recommended image set per case</h3>
+      <ul class="checklist compact">
+        <li>1 overview wound photo</li>
+        <li>1 close-up wound photo with scale/ruler</li>
+        <li>1 supporting image if relevant: offloading device, compression, X-ray, Doppler or follow-up photo</li>
+        <li>Consent and de-identification confirmed</li>
+      </ul>
+    </div>
+    <div class="card gold">
+      <h3>Layout tip for Reveal.js</h3>
+      <p>Keep one hero image large, and place supporting images as small thumbnails. Use the same crop ratio across cases so the deck looks consistent.</p>
+      <p class="mini">Because the current deck uses placeholder blocks, you can swap each placeholder with a local <span class="kbd">img</span> tag later without redesigning the slide.</p>
+    </div>
+  </div>
+  <aside class="notes">This appendix slide is for future deck maintenance once real case photos are available.</aside>
+</section>
+
+<section>
+  <div class="section-number">Appendix</div>
+  <h2>GitHub Pages presenter tips</h2>
+  <div class="two-col">
+    <div class="card blue"><h3>Keyboard</h3><p><span class="kbd">F</span> fullscreen &nbsp; <span class="kbd">S</span> speaker notes &nbsp; <span class="kbd">Esc</span> overview &nbsp; <span class="kbd">B</span> black screen</p></div>
+    <div class="card green"><h3>Print to PDF</h3><p>Add <span class="kbd">?print-pdf</span> to the URL, then use the browser print dialog.</p></div>
+  </div>
+  <aside class="notes">This slide can be deleted before live presentation if not needed.</aside>
+</section>
+
+<section>
+  <div class="section-number">References</div>
+  <h2>Core references used to prepare this deck</h2>
+  <ol class="refs">
+    <li>Malaysia Medical Device Authority, Malaysia Medical Device Register — Cellmax™ Freeze Dried Powder entry and public register search. https://mdar.mda.gov.my/</li>
+    <li>Cellmax™ official product information: “What is Cellmax” and preparation/application notes. https://cellmax.com.my/what-is-cellmax/</li>
+    <li>International Working Group on the Diabetic Foot. IWGDF Guidelines 2023 update. https://iwgdfguidelines.org/guidelines-2023/</li>
+    <li>IWGDF/IDSA Guidelines on the diagnosis and treatment of diabetes-related foot infections, 2023 update. https://www.idsociety.org/practice-guideline/diabetic-foot-infections/</li>
+    <li>Harries RL et al. Wound bed preparation: TIME for an update. International Wound Journal. 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC7949772/</li>
+    <li>Sibbald RG et al. Best Practice Recommendations for Preparing the Wound Bed: Update 2006. Wound Care Canada. https://www.woundscanada.ca/</li>
+  </ol>
+  <div class="bottom-note">Final clinical-use version should be checked against the latest manufacturer IFU, authorised training manual and Klinik Inocare SOP before delivery.</div>
+  <aside class="notes">Close with governance. Keep a copy of the IFU with the training attendance record.</aside>
+</section>
+
+<section data-background-gradient="linear-gradient(135deg,#0b2a4a 0%,#0868b7 60%,#0fa3b1 100%)">
+  <div style="color:white;text-align:center;padding-top:110px">
+    <div class="clinic-logo" style="color:white;font-size:.7em">Klinik <span style="color:#bde7ff">Inocare</span></div>
+    <h1 style="color:white;margin-top:28px">Thank you</h1>
+    <p style="font-size:.68em;color:#eaf6ff">Safe selection. Careful application. Objective follow-up.</p>
+    <p style="font-size:.42em;color:#d7ecfb;margin-top:46px">Doctor Training Workshop | Bioprotein in Advanced Wound Management</p>
+  </div>
+  <aside class="notes">End warmly. Invite questions and proceed to hands-on station if scheduled.</aside>
+</section>
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+    transition: 'slide',
+    backgroundTransition: 'fade',
+    width: 1280,
+    height: 720,
+    margin: 0.055,
+    controlsTutorial: true,
+    plugins: [ RevealNotes ]
+  });
+</script>
+</body>
+</html>
