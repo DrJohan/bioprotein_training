@@ -1,0 +1,36 @@
+name: Trigger Klinik Inocare Portal
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Confirm deployment token is configured
+        env:
+          PORTAL_DEPLOY_TOKEN: ${{ secrets.PORTAL_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$PORTAL_DEPLOY_TOKEN" ]; then
+            echo "PORTAL_DEPLOY_TOKEN is not configured in this repository." >&2
+            exit 1
+          fi
+
+      - name: Trigger portal rebuild
+        env:
+          GH_TOKEN: ${{ secrets.PORTAL_DEPLOY_TOKEN }}
+        run: |
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            repos/DrJohan/klinikinocare-web/dispatches \
+            -f event_type=training_updated
