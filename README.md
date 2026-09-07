@@ -42,7 +42,7 @@ All local assets use relative paths, so the deck is compatible with project-site
 
 Every slide uses the approved logo at the top right, the clinic address in the footer, and a page count. The shared layout is in `assets/brand.css`; the repeated slide frame and address are in `assets/brand.js`. The dark closing slide uses the approved white logo variant.
 
-DM Sans and Inter are bundled locally, with their licences in `assets/fonts/`. Light slides use `assets/brand/inocare-colour.jpg`, copied unchanged from the supplied `WHITE.jpg` colour logo. The reversed white closing-slide logo is from the approved brand kit. Address source: [Klinik Inocare contact page](https://klinikinocare.com/contact-us/).
+DM Sans and Inter are bundled locally, with their licences in `assets/fonts/`. Light slides use `assets/brand/inocare-colour-transparent.png`, a transparent-background version of the supplied colour logo. The original white-background image is retained as `assets/brand/inocare-colour.jpg`. The reversed white closing-slide logo is from the approved brand kit. Address source: [Klinik Inocare contact page](https://klinikinocare.com/contact-us/).
 
 Phosphor outline icons are bundled in `assets/icons/` with their MIT licence and source information. Slides 11–12 use published photographs of real foot examinations, with visible credits and full provenance in `assets/photos/README.md`. Detailed assessment prompts from the replaced illustrations remain in the speaker notes.
 
