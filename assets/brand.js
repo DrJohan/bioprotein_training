@@ -34,3 +34,10 @@ deckSlides.forEach((slide, index) => {
   footer.append(address, count);
   slide.append(header, footer);
 });
+
+document.querySelectorAll('.click-reveal').forEach(slide => {
+  slide.addEventListener('click', event => {
+    if (event.defaultPrevented || event.target.closest('a, button, input, select, textarea')) return;
+    Reveal.next();
+  });
+});
