@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>
+    if (window.location.hostname === "training.klinikinocare.my") {
+      const path = window.location.pathname.replace(/^\/+/, "");
+      const target = new URL(path, "https://klinikinocare.my/training/");
+
+      target.search = window.location.search;
+      target.hash = window.location.hash;
+      window.location.replace(target.href);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bioprotein in Advanced Wound Management | Klinik Inocare</title>
   <link rel="icon" type="image/png" href="assets/brand/favicon.png">
